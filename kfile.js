@@ -37,9 +37,9 @@ let flags = {
 	with_tinydir: false,
 	with_zlib: false,
 	with_stb_image_write: false,
-	with_audio: false,
+	with_audio: true,
 	with_onnx: false,
-	with_worker: false,
+	with_worker: true,
 	on_project_created: null,
 };
 

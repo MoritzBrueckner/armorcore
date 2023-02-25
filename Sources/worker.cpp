@@ -495,8 +495,8 @@ void bind_worker_class(Isolate* isolate, const v8::Global<v8::Context>& context)
 }
 
 void handle_worker_messages(v8::Isolate* isolate, const v8::Global<v8::Context>& context) {
-	Isolate::Scope isolate_scope(isolate);
 	Locker locker(isolate);
+	Isolate::Scope isolate_scope(isolate);
 	HandleScope handle_scope(isolate);
 
 	ContextData* context_data = (ContextData*)(isolate->GetData(worker_data_slot));
